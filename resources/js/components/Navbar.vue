@@ -4,10 +4,10 @@
       <router-link :to="{ name: user ? 'home' : 'welcome' }" class="navbar-brand">
         {{ appName }}
       </router-link>
-
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false">
         <span class="navbar-toggler-icon" />
       </button>
+     
 
       <div id="navbarToggler" class="collapse navbar-collapse">
         <ul class="navbar-nav">
@@ -31,13 +31,13 @@
                 <fa icon="cog" fixed-width />
                 {{ $t('settings') }}
               </router-link>
-
-              <div class="dropdown-divider" />
+            <div class="dropdown-divider" />
               <a href="#" class="dropdown-item pl-3" @click.prevent="logout">
                 <fa icon="sign-out-alt" fixed-width />
                 {{ $t('logout') }}
               </a>
             </div>
+             
           </li>
           <!-- Guest -->
           <template v-else>
