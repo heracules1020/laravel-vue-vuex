@@ -8,16 +8,13 @@
 <script>
 export default {
   name: 'LoginWithGithub',
-
   computed: {
     githubAuth: () => window.config.githubAuth,
     url: () => `/api/oauth/github`
   },
-
   mounted () {
     window.addEventListener('message', this.onMessage, false)
   },
-
   beforeDestroy () {
     window.removeEventListener('message', this.onMessage)
   },
