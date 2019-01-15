@@ -8,7 +8,6 @@ import '~/plugins'
 import '~/components'
 
 Vue.config.productionTip = false
-
 /* eslint-disable no-new */
 new Vue({
   i18n,
@@ -16,3 +15,4 @@ new Vue({
   router,
   ...App
 })
+
