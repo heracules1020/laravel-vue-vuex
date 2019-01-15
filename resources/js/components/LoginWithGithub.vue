@@ -22,11 +22,9 @@ export default {
   methods: {
     async login () {
       const newWindow = openWindow('', this.$t('login'))
-
       const url = await this.$store.dispatch('auth/fetchOauthUrl', {
         provider: 'github'
       })
-
       newWindow.location.href = url
     },
 
