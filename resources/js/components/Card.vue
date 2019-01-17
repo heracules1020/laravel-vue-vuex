@@ -6,10 +6,8 @@
     <div class="card-body">
       <slot />
     </div>
-    
-  </div>
-</template>
-
+    </div>
+</template> 
 <script>
 export default {
   name: 'Card',
