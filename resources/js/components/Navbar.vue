@@ -7,9 +7,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false">
         <span class="navbar-toggler-icon" />
       </button>
-     
-
-      <div id="navbarToggler" class="collapse navbar-collapse">
+     <div id="navbarToggler" class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <locale-dropdown />
           <!-- <li class="nav-item">
