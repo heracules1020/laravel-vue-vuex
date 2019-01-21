@@ -35,11 +35,9 @@ export default {
       if (e.origin !== window.origin || !e.data.token) {
         return
       }
-
       this.$store.dispatch('auth/saveToken', {
         token: e.data.token
       })
-
       this.$router.push({ name: 'home' })
     }
   }
