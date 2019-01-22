@@ -14,7 +14,6 @@
             <a class="nav-link" href="#">Link</a>
           </li> -->
         </ul>
-
         <ul class="navbar-nav ml-auto">
           <!-- Authenticated -->
           <li v-if="user" class="nav-item dropdown">
@@ -37,6 +36,7 @@
             </div>
              
           </li>
+        
           <!-- Guest -->
           <template v-else>
             <li class="nav-item">

@@ -7,7 +7,6 @@
   }" class="progress"
   />
 </template>
-
 <script>
 // https://github.com/nuxt/nuxt.js/blob/master/lib/app/components/nuxt-loading.vue
 export default {
@@ -84,7 +83,6 @@ export default {
   }
 }
 </script>
-
 <style scoped>
 .progress {
   position: fixed;
