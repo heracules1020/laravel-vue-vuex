@@ -13,11 +13,9 @@
     </label>
   </div>
 </template>
-
 <script>
 export default {
   name: 'Checkbox',
-
   props: {
     id: { type: String, default: null },
     name: { type: String, default: 'checkbox' },

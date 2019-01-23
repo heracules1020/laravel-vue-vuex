@@ -9,7 +9,6 @@
     <slot />
   </button>
 </template>
-
 <script>
 export default {
   name: 'VButton',
@@ -19,17 +18,14 @@ export default {
       type: String,
       default: 'primary'
     },
-
     nativeType: {
       type: String,
       default: 'submit'
     },
-
     loading: {
       type: Boolean,
       default: false
     },
-
     block: {
       type: Boolean,
       default: false
