@@ -6,7 +6,7 @@
     <div class="card-body">
       <slot />
     </div>
-    </div>
+  </div>
 </template> 
 <script>
 export default {
