@@ -15,15 +15,12 @@ use Illuminate\Http\Request;
 
 Route::group(['middleware' => 'auth:api'], function () {
     Route::post('logout', 'Auth\LoginController@logout');
-
     Route::get('/user', function (Request $request) {
         return $request->user();
     });
-
     Route::patch('settings/profile', 'Settings\ProfileController@update');
     Route::patch('settings/password', 'Settings\PasswordController@update');
 });
-
 Route::group(['middleware' => 'guest:api'], function () {
     Route::post('login', 'Auth\LoginController@login');
     Route::post('register', 'Auth\RegisterController@register');

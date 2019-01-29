@@ -9,5 +9,6 @@
 export default {
   name: 'Child'
 }
-</script>
+</script>components/Navbar'
+
 
