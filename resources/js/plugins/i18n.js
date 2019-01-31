@@ -17,7 +17,6 @@ export async function loadMessages (locale) {
     const messages = await import(/* webpackChunkName: '' */ `~/lang/${locale}`)
     i18n.setLocaleMessage(locale, messages)
   }
-
   if (i18n.locale !== locale) {
     i18n.locale = locale
   }
