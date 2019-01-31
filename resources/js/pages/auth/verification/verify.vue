@@ -15,7 +15,6 @@
           <div class="alert alert-danger" role="alert">
             {{ error || $t('failed_to_verify_email') }}
           </div>
-
           <router-link :to="{ name: 'verification.resend' }" class="small float-right">
             {{ $t('resend_verification_link') }}
           </router-link>
@@ -27,7 +26,6 @@
 
 <script>
 import axios from 'axios'
-
 const qs = (params) => Object.keys(params).map(key => `${key}=${params[key]}`).join('&')
 
 export default {
@@ -36,7 +34,6 @@ export default {
   metaInfo () {
     return { title: this.$t('verify_email') }
   },
-
   async beforeRouteEnter (to, from, next) {
     try {
       const { data } = await axios.post(`/api/email/verify/${to.params.id}?${qs(to.query)}`)

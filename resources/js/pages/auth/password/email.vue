@@ -4,7 +4,6 @@
       <card :title="$t('reset_password')">
         <form @submit.prevent="send" @keydown="form.onKeydown($event)">
           <alert-success :form="form" :message="status" />
-
           <!-- Email -->
           <div class="form-group row">
             <label class="col-md-3 col-form-label text-md-right">{{ $t('email') }}</label>
@@ -13,7 +12,6 @@
               <has-error :form="form" field="email" />
             </div>
           </div>
-
           <!-- Submit Button -->
           <div class="form-group row">
             <div class="col-md-9 ml-md-auto">
@@ -48,9 +46,7 @@ export default {
   methods: {
     async send () {
       const { data } = await this.form.post('/api/password/email')
-
       this.status = data.status
-
       this.form.reset()
     }
   }
