@@ -66,7 +66,6 @@ export default {
   metaInfo () {
     return { title: this.$t('login') }
   },
-
   data: () => ({
     form: new Form({
       email: '',
@@ -74,7 +73,6 @@ export default {
     }),
     remember: false
   }),
-
   methods: {
     async login () {
       // Submit the form.
@@ -93,5 +91,6 @@ export default {
       this.$router.push({ name: 'home' })
     }
   }
+  
 }
 </script>
