@@ -33,10 +33,8 @@ function createRouter () {
     mode: 'history',
     routes
   })
-
   router.beforeEach(beforeEach)
   router.afterEach(afterEach)
-
   return router
 }
 
@@ -49,7 +47,6 @@ function createRouter () {
  */
 async function beforeEach (to, from, next) {
   let components = []
-
   try {
     // Get the matched components and resolve them.
     components = await resolveComponents(
@@ -61,7 +58,6 @@ async function beforeEach (to, from, next) {
       return
     }
   }
-
   if (components.length === 0) {
     return next()
   }
