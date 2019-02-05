@@ -14,10 +14,8 @@ const modules = requireContext.keys()
     if (module.namespaced === undefined) {
       module.namespaced = true
     }
-
     return { ...modules, [name]: module }
   }, {})
-
 export default new Vuex.Store({
   modules
 })
