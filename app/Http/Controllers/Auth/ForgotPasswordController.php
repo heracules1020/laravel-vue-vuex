@@ -9,7 +9,6 @@ use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 class ForgotPasswordController extends Controller
 {
     use SendsPasswordResetEmails;
-
     /**
      * Create a new controller instance.
      *
@@ -20,6 +19,7 @@ class ForgotPasswordController extends Controller
         $this->middleware('guest');
     }
 
+    
     /**
      * Get the response for a successful password reset link.
      *

@@ -46,7 +46,6 @@ class LoginController extends Controller
 
         return true;
     }
-
     /**
      * Send the response after the user was authenticated.
      *
@@ -66,8 +65,7 @@ class LoginController extends Controller
             'expires_in' => $expiration - time(),
         ]);
     }
-
-    /**
+   /**
      * Get the failed login response instance.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -87,6 +85,8 @@ class LoginController extends Controller
         ]);
     }
 
+
+ 
     /**
      * Log the user out of the application.
      *
