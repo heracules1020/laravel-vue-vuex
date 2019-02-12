@@ -31,7 +31,6 @@ class ResetPasswordController extends Controller
 	{
 		return ['status' => trans($response)];
 	}
-
 	/**
 	 * Get the response for a failed password reset.
 	 *
