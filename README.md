@@ -6,9 +6,6 @@
 
 > A Laravel-Vue SPA starter project template.
 
-<p align="center">
-<img src="https://i.imgur.com/NHFTsGt.png">
-</p>
 
 ## Features
 
